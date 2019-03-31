@@ -1,12 +1,38 @@
 # robot-evo-arduino-b4a
 
-## Composants
+## Logiciels
+| Arduino | Fritzing | B4A | Android |
+| :-----: | :------: | :-----: | :---------: | :-------: |
+| ![](/icone/Arduino.png) | ![](/icone/Fritzing.png) | ![](/icone/B4A.png) | ![](/icone/Android.png) |
 
-### Arduino_Uno
-![Arduino_Uno]()
+## Composants
+| Arduino | SeeedStudio |
+| :-----: | :------: |
+| ![](/icone/Arduino.png) | ![](/icone/Seeed_Studio.png) |
+
+### Arduino
+| Arduino Mega  | Arduino Uno |
+| :-------------: | :-------------: |
+| ![](/composants/Arduino%20Mega.jpg) | ![](/composants/Arduino%20Uno.jpg) | 
+
+### Shield
+| Shield Grove base | Shield Grove Mega |
+| :-------------: | :-------------: |
+| ![](/composants/SeeedStudio/Shield_Grove_Base.png) | ![](/composants/SeeedStudio/Shield_Grove_Mega.jpg) |
+
+### SeeedStudio
+| Buzzer | LED | Servo Moteur | switch_p|
+| :-------------: | :-------------: | :-------------: | :-------------: |
+| ![](/composants/SeeedStudio/Grove_Buzzer.jpg) | ![](/composants/SeeedStudio/Grove_LED.jpg) | ![](/composants/SeeedStudio/Grove_Servo.jpg) | ![](/composants/SeeedStudio/Grove_switch_p.jpg) |
+| Serial Bluetooth v3.0 | Cable| Module 3 | Module 4|
+| ![](/composants/SeeedStudio/Grove_Serial_Bluetooth_v3.0.jpg) | ![](/composants/SeeedStudio/Grove_Cable.jpg) | ![](/composants/SeeedStudio/Grove_) | ![](/composants/SeeedStudio/Grove_) |
 
 ## Branchement
-![Fritzing]()
+| Fritzing |
+| :-------------: |
+| ![](/icone/Fritzing.png) |
+
+![](/fritzing/Untitled_Sketch.png)
 
 ### Shield
 * NC
