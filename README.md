@@ -13,7 +13,7 @@
 ### Arduino
 | Arduino Mega  | Arduino Uno |
 | :-------------: | :-------------: |
-| ![](/composants/Arduino%20Mega.jpg) | ![](/composants/Arduino_Uno.jpg) | 
+| ![](/composants/Arduino%20Mega.jpg) | ![](/composants/Arduino%20Uno.jpg) | 
 
 ### Shield
 | Shield Grove base | Shield Grove Mega |
