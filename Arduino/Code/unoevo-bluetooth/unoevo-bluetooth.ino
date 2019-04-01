@@ -1,9 +1,16 @@
 #include <Servo.h>
 #include <SoftwareSerial.h>
 
-const int switchPin = 4;
+#define RX_pin 2
+#define TX_pin 3
+#define switchPin 4
+#define LedPin 5
+#define BuzzerPin 6
+#define Servo_GPin 8
+#define Servo_DPin 9
 
-SoftwareSerial mavoieserie(2, 3); // (RX, TX) (pin Rx BT, pin Tx BT)
+
+SoftwareSerial mavoieserie(RX_pin, TX_pin); // (RX, TX) (pin Rx BT, pin Tx BT)
 
 int Tension=0;
 int Pad;
@@ -15,13 +22,13 @@ int Pos_D, Pos_G;
 
 void setup()
 {
-  pinMode( 5 , OUTPUT);
-  pinMode( 6 , OUTPUT);
+  pinMode( LedPin , OUTPUT);
+  pinMode( BuzzerPin , OUTPUT);
   pinMode(switchPin, INPUT);
   Serial.begin(115200);
   mavoieserie.begin(115200);
-  Servo_G.attach(8, 0, 1000);
-  Servo_D.attach(9, 0, 1000);
+  Servo_G.attach(Servo_GPin, 0, 1000);
+  Servo_D.attach(Servo_DPin, 0, 1000);
   Pos_G=Servo_G.read();
   Serial.println(Pos_G);
   Pos_D=Servo_D.read();
@@ -31,8 +38,8 @@ void setup()
   delay (1000);
   Serial.println(Pad);
 
-  digitalWrite(5 , LOW);
-  digitalWrite(6 , LOW);
+  digitalWrite(LedPin , LOW);
+  digitalWrite(BuzzerPin , LOW);
   
 }
 
@@ -91,17 +98,17 @@ void loop()
       }
       if (Pad=='L') //Croix
       {
-        digitalWrite(5, HIGH);
+        digitalWrite(LedPin, HIGH);
       }
       if (Pad=='F') //Rond
       {
-        digitalWrite(5, LOW);
+        digitalWrite(LedPin, LOW);
       }
       if (Pad=='R')
       {
-        digitalWrite(6,HIGH);
+        digitalWrite(BuzzerPin,HIGH);
         delay(300);
-        digitalWrite(6,LOW);
+        digitalWrite(BuzzerPin,LOW);
       }
     }
   }
