@@ -35,7 +35,7 @@
 ![](/fritzing/Untitled_Sketch.png)
 
 ### Shield
-* NC
+* Shield Grove
 
 ### Analogique
 * A0: NC
@@ -48,14 +48,14 @@
 ### Digital
 * D0 : RX rs232 non utilise
 * D1 : TX rs232 non utilise
-* D2 : NC
-* D3 : NC
-* D4 : NC
-* D5 : NC
-* D6 : NC
+* D2 : RX Bluetooth
+* D3 : Tx Bluetooth
+* D4 : Switch P
+* D5 : LED
+* D6 : Buzzer
 * D7 : NC
-* D8 : NC
-* D9 : NC
+* D8 : Servo Gauche
+* D9 : Servo Droite
 * D10 : NC
 * D11 : NC
 * D12 : NC
