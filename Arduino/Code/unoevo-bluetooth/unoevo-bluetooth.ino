@@ -22,11 +22,13 @@ int Pos_D, Pos_G;
 
 void setup()
 {
+  
   pinMode( LedPin , OUTPUT);
   pinMode( BuzzerPin , OUTPUT);
   pinMode(switchPin, INPUT);
   Serial.begin(115200);
   mavoieserie.begin(115200);
+  Serial.println("Debut setup");
   Servo_G.attach(Servo_GPin, 0, 1000);
   Servo_D.attach(Servo_DPin, 0, 1000);
   Pos_G=Servo_G.read();
@@ -40,7 +42,7 @@ void setup()
 
   digitalWrite(LedPin , LOW);
   digitalWrite(BuzzerPin , LOW);
-  
+  Serial.println("Fin setup");
 }
 
 void loop()
@@ -61,7 +63,6 @@ void loop()
         Servo_G.write(1000);
         Servo_D.write(500);
       }
-      else
       
       if (Pad=='Q')
       {
